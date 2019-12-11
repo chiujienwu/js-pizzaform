@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Order Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon"
+          type="image/x-icon"
+          href="Sonya-Swarm-Pizza.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<header>
+    <h1><span class="green">Chiu's </span><span class="white">Most </span><span class="red">Famous </span>
+    <span class="green">Pizza</span>
+    </h1>
+</header>
+
+<body>
+
+<div class="tabs">
+    <ul class="tabNavigation">
+        <li id="tab1"><a href="index.html#step1" class="navTab">Step 1:Choose Your Pizza</a></li>
+        <li id="tab2"><a href="index.html#step2" class="navTab">Step 2:Enter Delivery Info</a></li>
+        <li id="tab3"><a href="index.html#step3" class="navTab">Step 3:Order Confirmation</a></li>
+    </ul>
+
+    <div id="step1" class="divTab">
+
+        <table>
+            <caption><h2>Make your Pizza</h2></caption>
+            <tr>
+                <th>Choose your Size:</th>
+                <th>Choose your Crust:</th>
+                <th>Choose your Meats:</th>
+                <th>Choose your Veggies:</th>
+            </tr>
+            <tr>
+                <!--Customer to select radio button choice for size-->
+                <td>
+                    <label>
+                        <input type="radio" name="size" value="small" checked> Small $7
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="medium"> Medium $9
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="large"> Large $12
+                    </label>
+                </td>
+                <!--Customer to select radio button choice for crust-->
+                <td>
+                    <label>
+                        <input type="radio" name="crust" value="thin" checked> Thin
+                    </label>
+                    <label>
+                        <input type="radio" name="crust" value="pan"> Pan
+                    </label>
+                    <label>
+                        <input type="radio" name="crust" value="gluten"> Gluten Free
+                    </label>
+                </td>
+                <!--Customer to select fieldset choices for meats-->
+                <td>
+                    <label>
+                        <input type="checkbox" name="meats" value="sausage"> Italian Sausage
+                    </label>
+                    <label>
+                        <input type="checkbox" name="meats" value="pepperoni"> Pepperoni
+                    </label>
+                    <label>
+                        <input type="checkbox" name="meats" value="chicken"> Premium Chicken
+                    </label>
+                    <label>
+                        <input type="checkbox" name="meats" value="bacon"> Bacon
+                    </label>
+                    <label>
+                        <input type="checkbox" name="meats" value="salami"> Salami
+                    </label>
+                    <label>
+                        <input type="checkbox" name="meats" value="beef"> Beef
+                    </label>
+                    <label>
+                        <input type="checkbox" name="meats" value="ham"> Ham
+                    </label>
+                    <label>
+                        <input type="checkbox" name="meats" value="steak"> Philly Steak
+                    </label>
+                </td>
+                <!--Customer to select fieldset choices for veggies-->
+                <td>
+                    <label>
+                        <input type="checkbox" name="veggies" value="jalapeno"> Jalapeno Peppers
+                    </label>
+                    <label>
+                        <input type="checkbox" name="veggies" value="onions"> Onions
+                    </label>
+                    <label>
+                        <input type="checkbox" name="veggies" value="olives"> Olives
+                    </label>
+                    <label>
+                        <input type="checkbox" name="veggies" value="mushrooms"> Mushrooms
+                    </label>
+                    <label>
+                        <input type="checkbox" name="veggies" value="pineapple"> Pineapple
+                    </label>
+                    <label>
+                        <input type="checkbox" name="veggies" value="spinach"> Spinach
+                    </label>
+                    <label>
+                        <input type="checkbox" name="veggies" value="peppers"> Green & Red Peppers
+                    </label>
+                    <label>
+                        <input type="checkbox" name="veggies" value="feta"> Feta Cheese
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <br/>
+        <div id="pizza_button"><button>Proceed to Next Step</button></div>
+    </div>
+
+    <div id="step2" class="divTab">
+        <form>
+            <table>
+                <caption><h2>Customer</h2></caption>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>City, State Zip</th>
+                    <th>Telephone</th>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            First Name<br/><input type="text" name="firstName" value="Jerry" id="firstName" required>
+                        </label>
+                        <label>
+                            Last Name<br/><input type="text" name="lastName" value="Chiu" id="lastName" required>
+                        </label>
+                    </td>
+
+                    <td>
+                        <label>
+                            House Number<br/><input type="text" name="house" value="800" id="house" required>
+                        </label>
+                        <label>
+                            Street Name<br/><input type="text" name="street" value="Main St" id="street" required>
+                        </label>
+                        <label>
+                            Apt Number<br/><input type="text" name="apt" value="L164" id="apt">
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            City<br/><input type="text" name="city" value="Pewaukee" id="city" required>
+                        </label>
+                        <label>
+                            State<br/><input type="text" name="state" id="state" value="WI" required>
+                        </label>
+                        <label>
+                            Zip<br/><input type="text" name="zip" value="53072" id="zip" required>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            Telephone<br/><input type="tel" name="phone" id="phone" value="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                        </label>
+                    </td>
+            </table>
+            <br/>
+            <br/>
+            <div id="customer_button"><button>Submit Customer Info</button></div>
+        </form>
+    </div>
+
+    <div id="step3" class="divTab">
+        <h3>Summary of Order</h3>
+        <p></p>
+    </div>
+
+</div>
+
+</body>
+
+</html>

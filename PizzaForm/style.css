@@ -1,0 +1,132 @@
+header {    background-color: #000033;
+    color: #FFFFFF;
+    background-image: url("cheese-delicious-dinner-2232.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 1000%;
+    text-indent: 1em; }
+
+h1 {
+    margin-bottom: 2px;
+    font-family: "Brush Script MT", "Segoe Script", "Times New Roman", sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2, h3 {
+    margin-bottom: 2px;
+    font-family: Garamond, "Times New Roman", sans-serif;
+}
+
+
+span.red {
+    color: red;
+    font-size: 3em;
+}
+
+span.white {
+    color: whitesmoke;
+    font-size: 3em;
+}
+
+span.green {
+    color: green;
+    font-size: 3em;
+}
+
+table {
+    width:100%;
+}
+
+th {
+    text-align: left;
+}
+
+tr {
+    vertical-align: top;
+}
+
+td{
+    border: 1px solid grey;
+}
+
+BODY {
+    margin: 10px;
+    padding: 0;
+    font: 1em "Trebuchet MS", verdana, arial, sans-serif;
+    font-size: 100%;
+}
+
+DIV.container {
+    width: 90%;
+    margin: auto auto 10px;
+}
+TEXTAREA {
+    width: 80%;
+}
+FIELDSET {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin: 0;
+}
+LEGEND {
+    color: #ccc;
+    font-size: 120%;
+}
+INPUT, TEXTAREA {
+    font-family: Arial, verdana, serif;
+    font-size: 125%;
+    padding: 7px;
+    border: 1px solid #999;
+}
+LABEL {
+    display: block;
+    margin-top: 10px;
+}
+IMG {
+    margin: 5px;
+}
+UL.tabNavigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+UL.tabNavigation LI {
+    display: inline;
+}
+UL.tabNavigation LI A {
+    padding: 3px 5px;
+    background-color: #ff0000;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+UL.tabNavigation LI A.selected, UL.tabNavigation LI A:hover {
+    background-color: green;
+    color: #FFFFFF;
+    padding-top: 7px;
+}
+UL.tabNavigation LI A:focus {
+    outline: 0;
+}
+div.tabs > div {
+    padding: 5px;
+    margin-top: 3px;
+    border: 5px solid #333;
+}
+div.tabs > div h2 {
+    margin-top: 0;
+}
+#first {
+    background-color: #f00;
+}
+#second {
+    background-color: #0f0;
+}
+#third {
+    background-color: #00f;
+}
+.waste {
+    min-height: 1000px;
+}
+
+#customer_button, #pizza_button { text-align: center }
